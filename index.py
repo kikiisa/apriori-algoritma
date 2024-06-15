@@ -1,9 +1,7 @@
 from flask import Flask,request,jsonify
 app = Flask(__name__)
 # from apriori_python import apriori
-
 from apyori import apriori
-import core
 @app.route("/",methods=["GET","POST"])
 def hello_world():
     if(request.method == "POST"):
